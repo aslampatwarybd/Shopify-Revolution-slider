@@ -1,0 +1,361 @@
+<!-- ******************* -->
+<!-- BEGIN SLIDER MARKUP -->
+<!-- ******************* -->
+<div class="rev_slider_wrapper">
+
+  <!-- the ID here will be used in the JavaScript below to initialize the slider -->
+  <div id="rev_slider_1" class="rev_slider" style="display:none;" data-version="5.0">
+
+    <!-- BEGIN SLIDES LIST -->
+    <ul>
+      {% for i in (1..5) %}
+        {% capture slide %}rev_slide_{{ i }}_enable{% endcapture %}
+        {% capture slide_bg_type %}rev_slide_{{ i }}_bg_type{% endcapture %}
+        {% capture slide_transition %}rev_slide_{{ i }}_transition{% endcapture %}
+        {% capture slide_delay %}rev_slide_{{ i }}_delay{% endcapture %}
+        {% capture slide_img %}rev_slide_{{ i }}.jpg{% endcapture %}
+        {% capture slide_bg_color %}rev_slide_{{ i }}_bg_color{% endcapture %}
+        {% capture slide_video %}rev_slide_{{ i }}_video{% endcapture %}
+        {% capture slide_overlay_opacity %}rev_slide_{{ i }}_overlay_opacity{% endcapture %}
+        {% capture slide_bgimage_valign %}rev_slide_{{ i }}_bgimage_valign{% endcapture %}
+        {% capture slide_styleling %}rev_slide_{{ i }}_slide_styleling{% endcapture %}
+        {% capture slide_caption_transition %}rev_slide_{{ i }}_caption_transition{% endcapture %}
+        {% capture slide_caption_content_align %}rev_slide_{{ i }}_caption_content_align{% endcapture %}
+        {% capture slide_caption_title %}rev_slide_{{ i }}_caption_title{% endcapture %}
+        {% capture slide_caption_text %}rev_slide_{{ i }}_caption_text{% endcapture %}
+        {% capture slide_button_text %}rev_slide_{{ i }}_button_text{% endcapture %}
+        {% capture slide_link %}rev_slide_{{ i }}_link{% endcapture %}
+        {% capture slide_link_target %}rev_slide_{{ i }}_link_target{% endcapture %}
+        {% capture slide_caption_x %}rev_slide_{{ i }}_caption_x{% endcapture %}
+        {% capture slide_caption_y %}rev_slide_{{ i }}_caption_y{% endcapture %}      
+        {% capture slide_video_type %}rev_slide_{{ i }}_video_type{% endcapture %}
+        {% capture slide_video_loop %}rev_slide_{{ i }}_video_loop{% endcapture %}
+        {% capture slide_video_play %}rev_slide_{{ i }}_video_play{% endcapture %}
+        {% capture slide_video_volume %}rev_slide_{{ i }}_video_volume{% endcapture %}
+        {% capture slide_video_overlay %}rev_slide_{{ i }}_video_overlay{% endcapture %}  
+        {% if settings[slide] %}
+      		<!-- Image Background Slider Widht Caption Layer -->
+      		{% if settings[slide_bg_type] == 'image' %}
+            
+            <li data-transition="{{ settings[slide_transition] }}" data-delay="{{ settings[slide_delay] }}">
+              {%if settings[slide_link]%}<a href="{{settings[slide_link]}}">{%endif%}
+              <!-- SLIDE'S MAIN BACKGROUND IMAGE -->
+              <div style="background-image:url({{ slide_img | asset_url }});" 
+                   alt="Ocean" 
+                   class="rev-slidebg rev-image-slide" 
+                   data-bgposition="center center" 
+                   data-bgfit="cover" 
+                   data-bgrepeat="no-repeat"></div>
+              <div class="overlay" style="-ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity={{ settings[slide_overlay_opacity] }}0)';filter: alpha(opacity={{ settings[slide_overlay_opacity] }}0);-moz-opacity: 0.{{ settings[slide_overlay_opacity] }};-khtml-opacity: 0.{{ settings[slide_overlay_opacity] }};opacity: 0.{{ settings[slide_overlay_opacity] }};background-color: {{ settings[slide_bg_color] }};"></div>
+              <!-- BEGIN LAYER -->             
+              <div class="caption-wrap container tp-caption tp-resizeme" 
+                  data-actions='[{ 
+                      "event": "click", 
+                      "action": "simplelink", 
+                      "target": "_self", 
+                      "url": "{{settings[slide_link]}}"
+
+                  }]'                    	  
+                   data-x="{{settings[slide_caption_x]}}" 
+                   data-y="{{settings[slide_caption_y]}}"
+                   
+                  {%if settings[slide_caption_transition] == 'slide_mask_left'%}
+                    data-transform_in="x:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" 
+                    data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" 
+                    data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
+                  {%elsif settings[slide_caption_transition] == 'slide_mask_right'%}
+                    data-transform_in="x:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" 
+                    data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" 
+                    data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
+                  {%elsif settings[slide_caption_transition] == 'slide_mask_top'%}
+                    data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" 
+                    data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" 
+                    data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" 
+                  {%elsif settings[slide_caption_transition] == 'smooth_mask_right'%}
+                    data-transform_in="x:[-175%];y:0px;z:0;rX:0;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0.01;s:3000;e:Power3.easeOut;" 
+                    data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" 
+                    data-mask_in="x:[100%];y:0;s:inherit;e:inherit;" 
+                  {%elsif settings[slide_caption_transition] == 'smooth_mask_left'%}
+                    data-transform_in="x:[175%];y:0px;z:0;rX:0;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0.01;s:3000;e:Power3.easeOut;" 
+                    data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" 
+                    data-mask_in="x:[-100%];y:0;s:inherit;e:inherit;"
+                  {%elsif settings[slide_caption_transition] == 'smooth_mask_bottom'%}
+                    data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" 
+                    data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;"
+                  {%elsif settings[slide_caption_transition] == 'masked_zoom_out'%}
+                    data-transform_in="z:0;rX:0deg;rY:0;rZ:0;sX:2;sY:2;skX:0;skY:0;opacity:0;s:1000;e:Power2.easeOut;" 
+                    data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" 
+                    data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
+                  {%elsif settings[slide_caption_transition] == 'smooth_pop_up'%}
+                    data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:1000;e:Power2.easeOut;" 
+                    data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" 
+                  {%elsif settings[slide_caption_transition] == 'short_from_top'%}
+                    data-transform_in="y:-50px;opacity:0;s:1500;e:Power3.easeOut;" 
+                    data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" 
+                  {%elsif settings[slide_caption_transition] == 'Short_from_bottom'%}
+                    data-transform_in="y:50px;opacity:0;s:1500;e:Power3.easeOut;" 
+                    data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" 
+                  {%elsif settings[slide_caption_transition] == 'Short_from_left'%}
+                    data-transform_in="x:-50px;opacity:0;s:2000;e:Power3.easeOut;" 
+                    data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" 
+                  {%elsif settings[slide_caption_transition] == 'Short_from_right'%}
+                    data-transform_in="x:50px;opacity:0;s:1000;e:Power3.easeOut;" 
+                    data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;"
+                  {%elsif settings[slide_caption_transition] == 'long_from_top'%}
+                    data-transform_in="y:top;s:2000;e:Power4.easeInOut;" 
+                    data-transform_out="s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
+                  {%elsif settings[slide_caption_transition] == 'long_from_left'%}
+                    data-transform_in="x:left;s:2000;e:Power4.easeInOut;" 
+                    data-transform_out="s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
+                  {%elsif settings[slide_caption_transition] == 'long_from_right'%}
+                    data-transform_in="x:right;s:2000;e:Power4.easeInOut;" 
+                    data-transform_out="s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
+                  {%elsif settings[slide_caption_transition] == 'long_from_bottom'%}
+                    data-transform_in="y:bottom;s:2000;e:Power4.easeInOut;" 
+                    data-transform_out="s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
+                  {%elsif settings[slide_caption_transition] == 'custom_flip_vertical'%}
+                    data-transform_in="y:-30px;rX:70deg;opacity:0;s:2000;e:Power4.easeInOut;" 
+                    data-transform_out="s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
+                  {%elsif settings[slide_caption_transition] == 'custom_flip_horizontal'%}
+                    data-transform_in="x:-50px;rY:-90deg;opacity:0;s:2000;e:Back.easeOut;" 
+                    data-transform_out="s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
+                  {%elsif settings[slide_caption_transition] == 'custom_skew_from_left'%}
+                    data-transform_in="x:{-50,50};y:{-5,50};rX:{-90,90};rY:{-90,90};rZ:{-360,360};sX:0;sY:0;opacity:0;s:2000;e:Power4.easeInOut;" 
+                    data-transform_out="s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
+                  {%else%}
+                    data-transform_in="x:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" 
+                    data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" 
+                    data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"                   
+                   {%endif%}                   
+                   data-start="1000" 
+                   data-splitin="none" 
+                   data-splitout="none" 
+                   data-responsive_offset="on" 
+                   data-textAlign="['{{settings[slide_caption_content_align]}}','{{settings[slide_caption_content_align]}}','{{settings[slide_caption_content_align]}}','{{settings[slide_caption_content_align]}}']" 
+                  >
+                    <div class="caption-content">
+                        {% if settings[slide_caption_title] !=''%}
+                        <h2 class="caption-title"> 
+                          {% if settings.language_enable %}
+                          <span class="lang1">{{ settings[slide_caption_title] | split: '|' | first }}</span>
+                          <span class="lang2">{{ settings[slide_caption_title] | split: '|' | last }}</span>
+                          {% else %}
+                          {{ settings[slide_caption_title] | split: '|' | first }}
+                          {% endif %}
+                      	</h2>
+                        {% endif %}
+                        <div class="caption-excerpt">
+                          {% if settings[slide_caption_text] !=''%}
+                          <span>
+                            {% if settings.language_enable %}
+                            <span class="lang1">{{ settings[slide_caption_text] | split: '|' | first }}</span>
+                            <span class="lang2">{{ settings[slide_caption_text] | split: '|' | last }}</span>
+                            {% else %}
+                            {{ settings[slide_caption_text] | split: '|' | first }}
+                            {% endif %}
+                            {% if settings[slide_button_text] !=''%}
+                            <div class="rev-caption-button">
+                            <a class="link" href="{{ settings[slide_link]}}" target="_self">
+                              <span class="text"> 
+                                {% if settings.language_enable %}
+                                <span class="lang1">{{ settings[slide_button_text] | split: '|' | first }}</span>
+                                <span class="lang2">{{ settings[slide_button_text] | split: '|' | last }}</span>
+                                {% else %}
+                                {{ settings[slide_button_text] | split: '|' | first }}
+                                {% endif %}
+                              </span>
+                            </a>
+                            </div>
+                            {% endif %}
+                          </span>
+                          {% endif %} 
+                        </div>
+                    </div>
+                </div>              
+              <!-- END LAYER -->
+              {%if settings[slide_link]%}</a>{%endif%}
+            </li>
+         	{%endif%}
+      		<!-- Video Background Slider Widht Caption Layer -->
+      		{% if settings[slide_bg_type] == 'video' %}
+            <li data-transition="{{ settings[slide_transition] }}" data-delay="{{ settings[slide_delay] }}">
+                {%if settings[slide_link]%}<a href="{{settings[slide_link]}}">{%endif%}
+              <!-- SLIDE'S MAIN BACKGROUND IMAGE -->
+                <img src="{{ slide_img | asset_url }}" 
+                     alt="Ocean" 
+                     class="rev-slidebg" 
+                     data-bgposition="center center" 
+                     data-bgfit="cover" 
+                     data-bgrepeat="no-repeat">
+              {% if settings[slide_video_overlay] != 'none' %}
+			    <div class="overlay video-overlay overlay-{{ settings[slide_video_overlay]}}" style="-ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity={{ settings[slide_overlay_opacity] }}0)';filter: alpha(opacity={{ settings[slide_overlay_opacity] }}0);-moz-opacity: 0.{{ settings[slide_overlay_opacity] }};-khtml-opacity: 0.{{ settings[slide_overlay_opacity] }};opacity: 0.{{ settings[slide_overlay_opacity] }};background-color: {{ settings[slide_bg_color] }};">
+                </div>
+              {%endif%}
+            <!-- BACKGROUND VIDEO LAYER -->
+         	<div class="rs-background-video-layer"
+              {%if settings[slide_video_type] == 'vimeo'%}
+                 data-vimeoid="{{ settings[slide_video] }}"                   
+                 data-videoattributes="background=1&title=0&byline=0&portrait=0&api=1"
+              {%elsif settings[slide_video_type] == 'youtube'%}
+                 data-ytid="{{ settings[slide_video] }}"
+                 data-videoattributes="version=3&enablejsapi=1&html5=1&hd=1&wmode=opaque&showinfo=0&rel=0"
+              {%else%}                                
+                  data-videowidth="100%" 
+                  data-videoheight="100%" 
+                  data-videomp4="{{ settings[slide_video] }}" 
+                  data-videopreload="auto"                  
+                  data-forceCover="1" 
+                  data-aspectratio="16:9"                    
+                  data-autoplayonlyfirsttime="false"
+              {%endif%}
+                  data-autoplay="{{ settings[slide_video_play] }}"
+                  data-volume="{{ settings[slide_video_volume] }}" 
+                  data-forcerewind="on" 
+                  data-nextslideatend="true" 
+                  data-videoloop="{{ settings[slide_video_loop] }}"
+                  data-videoType="{{settings[slide_video_type]}}"
+            ></div>          
+            <!-- BEGIN LAYER -->
+              <!-- LAYER NR. 1 -->              
+              <div class="caption-wrap container tp-caption tp-resizeme" 
+                  data-actions='[{ 
+                      "event": "click", 
+                      "action": "simplelink", 
+                      "target": "_self", 
+                      "url": "{{settings[slide_link]}}"
+
+                  }]'                    	  
+                   data-x="{{settings[slide_caption_x]}}" 
+                   data-y="{{settings[slide_caption_y]}}"
+                   
+                  {%if settings[slide_caption_transition] == 'slide_mask_left'%}
+                    data-transform_in="x:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" 
+                    data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" 
+                    data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
+                  {%elsif settings[slide_caption_transition] == 'slide_mask_right'%}
+                    data-transform_in="x:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" 
+                    data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" 
+                    data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
+                  {%elsif settings[slide_caption_transition] == 'slide_mask_top'%}
+                    data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" 
+                    data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" 
+                    data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" 
+                  {%elsif settings[slide_caption_transition] == 'smooth_mask_right'%}
+                    data-transform_in="x:[-175%];y:0px;z:0;rX:0;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0.01;s:3000;e:Power3.easeOut;" 
+                    data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" 
+                    data-mask_in="x:[100%];y:0;s:inherit;e:inherit;" 
+                  {%elsif settings[slide_caption_transition] == 'smooth_mask_left'%}
+                    data-transform_in="x:[175%];y:0px;z:0;rX:0;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0.01;s:3000;e:Power3.easeOut;" 
+                    data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" 
+                    data-mask_in="x:[-100%];y:0;s:inherit;e:inherit;"
+                  {%elsif settings[slide_caption_transition] == 'smooth_mask_bottom'%}
+                    data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" 
+                    data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;"
+                  {%elsif settings[slide_caption_transition] == 'masked_zoom_out'%}
+                    data-transform_in="z:0;rX:0deg;rY:0;rZ:0;sX:2;sY:2;skX:0;skY:0;opacity:0;s:1000;e:Power2.easeOut;" 
+                    data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" 
+                    data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
+                  {%elsif settings[slide_caption_transition] == 'smooth_pop_up'%}
+                    data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:1000;e:Power2.easeOut;" 
+                    data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" 
+                  {%elsif settings[slide_caption_transition] == 'short_from_top'%}
+                    data-transform_in="y:-50px;opacity:0;s:1500;e:Power3.easeOut;" 
+                    data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" 
+                  {%elsif settings[slide_caption_transition] == 'Short_from_bottom'%}
+                    data-transform_in="y:50px;opacity:0;s:1500;e:Power3.easeOut;" 
+                    data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" 
+                  {%elsif settings[slide_caption_transition] == 'Short_from_left'%}
+                    data-transform_in="x:-50px;opacity:0;s:2000;e:Power3.easeOut;" 
+                    data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" 
+                  {%elsif settings[slide_caption_transition] == 'Short_from_right'%}
+                    data-transform_in="x:50px;opacity:0;s:1000;e:Power3.easeOut;" 
+                    data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;"
+                  {%elsif settings[slide_caption_transition] == 'long_from_top'%}
+                    data-transform_in="y:top;s:2000;e:Power4.easeInOut;" 
+                    data-transform_out="s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
+                  {%elsif settings[slide_caption_transition] == 'long_from_left'%}
+                    data-transform_in="x:left;s:2000;e:Power4.easeInOut;" 
+                    data-transform_out="s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
+                  {%elsif settings[slide_caption_transition] == 'long_from_right'%}
+                    data-transform_in="x:right;s:2000;e:Power4.easeInOut;" 
+                    data-transform_out="s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
+                  {%elsif settings[slide_caption_transition] == 'long_from_bottom'%}
+                    data-transform_in="y:bottom;s:2000;e:Power4.easeInOut;" 
+                    data-transform_out="s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
+                  {%elsif settings[slide_caption_transition] == 'custom_flip_vertical'%}
+                    data-transform_in="y:-30px;rX:70deg;opacity:0;s:2000;e:Power4.easeInOut;" 
+                    data-transform_out="s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
+                  {%elsif settings[slide_caption_transition] == 'custom_flip_horizontal'%}
+                    data-transform_in="x:-50px;rY:-90deg;opacity:0;s:2000;e:Back.easeOut;" 
+                    data-transform_out="s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
+                  {%elsif settings[slide_caption_transition] == 'custom_skew_from_left'%}
+                    data-transform_in="x:{-50,50};y:{-5,50};rX:{-90,90};rY:{-90,90};rZ:{-360,360};sX:0;sY:0;opacity:0;s:2000;e:Power4.easeInOut;" 
+                    data-transform_out="s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
+                  {%else%}
+                    data-transform_in="x:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" 
+                    data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" 
+                    data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"                   
+                   {%endif%}                   
+                   data-start="1000" 
+                   data-splitin="none" 
+                   data-splitout="none" 
+                   data-responsive_offset="on" 
+                   data-textAlign="['{{settings[slide_caption_content_align]}}','{{settings[slide_caption_content_align]}}','{{settings[slide_caption_content_align]}}','{{settings[slide_caption_content_align]}}']" 
+                  >
+                    <div class="caption-content">
+                        {% if settings[slide_caption_title] !=''%}
+                        <h2 class="caption-title"> 
+                          {% if settings.language_enable %}
+                          <span class="lang1">{{ settings[slide_caption_title] | split: '|' | first }}</span>
+                          <span class="lang2">{{ settings[slide_caption_title] | split: '|' | last }}</span>
+                          {% else %}
+                          {{ settings[slide_caption_title] | split: '|' | first }}
+                          {% endif %}
+                      	</h2>
+                        {% endif %}
+                        <div class="caption-excerpt">
+                          {% if settings[slide_caption_text] !=''%}
+                          <span>
+                            {% if settings.language_enable %}
+                            <span class="lang1">{{ settings[slide_caption_text] | split: '|' | first }}</span>
+                            <span class="lang2">{{ settings[slide_caption_text] | split: '|' | last }}</span>
+                            {% else %}
+                            {{ settings[slide_caption_text] | split: '|' | first }}
+                            {% endif %}
+                            {% if settings[slide_button_text] !=''%}
+                            <a class="link" href="{{ settings[slide_link]}}" target="_self">
+                              <span class="text"> 
+                                {% if settings.language_enable %}
+                                <span class="lang1">{{ settings[slide_button_text] | split: '|' | first }}</span>
+                                <span class="lang2">{{ settings[slide_button_text] | split: '|' | last }}</span>
+                                {% else %}
+                                {{ settings[slide_button_text] | split: '|' | first }}
+                                {% endif %}
+                              </span>
+                            </a>
+                            {% endif %}
+                          </span>
+                          {% endif %} 
+                        </div>
+                    </div>
+                </div>              
+              <!-- END LAYER -->  
+				{%if settings[slide_link]%}</a>{%endif%}
+            </li>
+      		{%endif%}
+      
+      
+      
+      
+        {% endif %}
+      {% endfor %}      
+      
+    </ul><!-- END SLIDES LIST -->
+
+  </div><!-- END SLIDER CONTAINER -->
+
+</div><!-- END SLIDER CONTAINER WRAPPER -->
+
+<!-- ***************** -->
+<!-- END SLIDER MARKUP -->
+<!-- ***************** -->
