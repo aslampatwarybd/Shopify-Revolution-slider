@@ -1,0 +1,3321 @@
+  {
+    "name": "Home page - rev slideshow",
+    "settings": [
+      {
+        "type": "select",
+        "id": "home_rev_slide_layout_md",
+        "label": "Large Screen\/Desktop Layout",
+        "options": [
+          {
+            "value": "auto",
+            "label": "Auto"
+          },
+          {
+            "value": "fullwidth",
+            "label": "Full Width"
+          },
+          {
+            "value": "fullscreen",
+            "label": "Full Screen"
+          }
+        ],
+        "default": "fullscreen"
+      },
+      {
+        "type": "select",
+        "id": "home_rev_slide_layout_sm",
+        "label": "Small Touch Device\/Tablat Layout",
+        "options": [
+          {
+            "value": "auto",
+            "label": "Auto"
+          },
+          {
+            "value": "fullwidth",
+            "label": "Full Width"
+          },
+          {
+            "value": "fullscreen",
+            "label": "Full Screen"
+          }
+        ],
+        "default": "fullwidth"
+      },
+      {
+        "type": "select",
+        "id": "home_rev_slide_layout_xs",
+        "label": "Extra Small Touch Device\/Mobile Layout",
+        "options": [
+          {
+            "value": "auto",
+            "label": "Auto"
+          },
+          {
+            "value": "fullwidth",
+            "label": "Full Width"
+          },
+          {
+            "value": "fullscreen",
+            "label": "Full Screen"
+          }
+        ],
+        "default": "fullwidth"
+      },
+      {
+        "type": "text",
+        "id": "home_rev_slide_md_min_height",
+        "label": "Slider Min height for Desktop",
+        "info": "Set the minimum height that the Slider should display at (optional) (no px). (Min Height will enable when layout is auto)"
+      },
+      {
+        "type": "text",
+        "id": "home_rev_slide_sm_min_height",
+        "label": "Slider Min height for Small Device\/Tablat",
+        "info": "Set the minimum height that the Slider should display at (optional) (no px). (Min Height will enable when layout is auto)"
+      },
+      {
+        "type": "text",
+        "id": "home_rev_slide_xs_min_height",
+        "label": "Slider Min height for Extra Small Device\/Mobile",
+        "info": "Set the minimum height that the Slider should display at (optional) (no px). (Min Height will enable when layout is auto)"
+      },
+      {
+        "type": "select",
+        "id": "home_rev_slide_nav",
+        "label": "Enable\/ Visiable Navigation",
+        "options": [
+          {
+            "value": "true",
+            "label": "Yes"
+          },
+          {
+            "value": "false",
+            "label": "No"
+          }
+        ],
+        "default": "true"
+      },
+      {
+        "type": "select",
+        "id": "home_rev_slide_nav_arrow_style",
+        "label": "Navigation Styles",
+        "options": [
+          {
+            "value": "hesperiden",
+            "label": "hesperiden"
+          },
+          {
+            "value": "gyges",
+            "label": "gyges"
+          },
+          {
+            "value": "hades",
+            "label": "hades"
+          },
+          {
+            "value": "ares",
+            "label": "ares"
+          },
+          {
+            "value": "hebe",
+            "label": "hebe"
+          },
+          {
+            "value": "hermes",
+            "label": "hermes"
+          },
+          {
+            "value": "persephone",
+            "label": "persephone"
+          },
+          {
+            "value": "erinyen",
+            "label": "erinyen"
+          },
+          {
+            "value": "zeus",
+            "label": "zeus"
+          },
+          {
+            "value": "metis",
+            "label": "metis"
+          },
+          {
+            "value": "dione",
+            "label": "dione"
+          },
+          {
+            "value": "uranus",
+            "label": "uranus"
+          }
+        ],
+        "default": "hesperiden"
+      },
+      {
+        "type": "select",
+        "id": "home_rev_slide_nav_bullets",
+        "label": "Enable\/ Visiable Bullets\/Dots",
+        "options": [
+          {
+            "value": "true",
+            "label": "Yes"
+          },
+          {
+            "value": "false",
+            "label": "No"
+          }
+        ],
+        "default": "true"
+      },
+      {
+        "type": "select",
+        "id": "home_rev_slide_nav_bullets_style",
+        "label": "Bullets\/Dots Styles",
+        "options": [
+          {
+            "value": "hesperiden",
+            "label": "hesperiden"
+          },
+          {
+            "value": "gyges",
+            "label": "gyges"
+          },
+          {
+            "value": "hades",
+            "label": "hades"
+          },
+          {
+            "value": "ares",
+            "label": "ares"
+          },
+          {
+            "value": "hebe",
+            "label": "hebe"
+          },
+          {
+            "value": "hermes",
+            "label": "hermes"
+          },
+          {
+            "value": "hephaistos",
+            "label": "hephaistos"
+          },
+          {
+            "value": "persephone",
+            "label": "persephone"
+          },
+          {
+            "value": "erinyen",
+            "label": "erinyen"
+          },
+          {
+            "value": "zeus",
+            "label": "zeus"
+          },
+          {
+            "value": "metis",
+            "label": "metis"
+          },
+          {
+            "value": "dione",
+            "label": "dione"
+          },
+          {
+            "value": "uranus",
+            "label": "uranus"
+          }
+        ],
+        "default": "hesperiden"
+      },
+      {
+        "type": "select",
+        "id": "home_rev_slide_nav_keyboardNavigation",
+        "label": "keyboard Navigation",
+        "info": "Choose to enable arrow keys to navigate between slides.",
+        "options": [
+          {
+            "value": "on",
+            "label": "ON"
+          },
+          {
+            "value": "off",
+            "label": "OFF"
+          }
+        ],
+        "default": "on"
+      },
+      {
+        "type": "select",
+        "id": "home_rev_slide_nav_keyboard_direction",
+        "label": "Keyboard Direction",
+        "info": "Control the slider with left\/right or up\/down keys",
+        "options": [
+          {
+            "value": "horizontal",
+            "label": "Horizontal"
+          },
+          {
+            "value": "vertical",
+            "label": "Vertical"
+          }
+        ],
+        "default": "horizontal"
+      },
+      {
+        "type": "select",
+        "id": "home_rev_slide_nav_onHoverStop",
+        "label": "Stop Slide On Hover",
+        "options": [
+          {
+            "value": "on",
+            "label": "ON"
+          },
+          {
+            "value": "off",
+            "label": "OFF"
+          }
+        ],
+        "default": "on"
+      },
+      {
+        "type": "header",
+        "content": "Slide 1"
+      },
+      {
+        "type": "checkbox",
+        "id": "rev_slide_1_enable",
+        "label": "Enable slide 1"
+      },
+      {
+        "type": "select",
+        "id": "rev_slide_1_bg_type",
+        "label": "Background type",
+        "info": "Choose what the background for the slide will be.",
+        "options": [
+          {
+            "value": "image",
+            "label": "Image"
+          },
+          {
+            "value": "video",
+            "label": "Video"
+          }
+        ],
+        "default": "image"
+      },
+      {
+        "type": "image",
+        "id": "rev_slide_1.jpg",
+        "label": "Background image",
+        "max-width": 4000,
+        "info": "4000px wide required"
+      },
+      {
+        "type": "select",
+        "id": "rev_slide_1_transition",
+        "label": "Transition",
+        "options": [
+          {
+            "value": "fade",
+            "label": "fade"
+          },
+          {
+            "value": "slideup",
+            "label": "slideup"
+          },
+          {
+            "value": "slidedown",
+            "label": "slidedown"
+          },
+          {
+            "value": "slideright",
+            "label": "slideright"
+          },
+          {
+            "value": "slideleft",
+            "label": "slideleft"
+          },
+          {
+            "value": "slideoverup",
+            "label": "slideoverup"
+          },
+          {
+            "value": "slideoverdown",
+            "label": "slideoverdown"
+          },
+          {
+            "value": "slideoverright",
+            "label": "slideoverright"
+          },
+          {
+            "value": "slideoverleft",
+            "label": "slideoverleft"
+          },
+          {
+            "value": "slideremoveup",
+            "label": "slideremoveup"
+          },
+          {
+            "value": "slideremovedown",
+            "label": "slideremovedown"
+          },
+          {
+            "value": "slideremoveright",
+            "label": "slideremoveright"
+          },
+          {
+            "value": "slideremoveleft",
+            "label": "slideremoveleft"
+          },
+          {
+            "value": "boxslide",
+            "label": "boxslide"
+          },
+          {
+            "value": "slotslide-horizontal",
+            "label": "slotslide-horizontal"
+          },
+          {
+            "value": "slotslide-vertical",
+            "label": "slotslide-vertical"
+          },
+          {
+            "value": "boxfade",
+            "label": "boxfade"
+          },
+          {
+            "value": "slotfade-horizontal",
+            "label": "slotfade-horizontal"
+          },
+          {
+            "value": "slotfade-vertical",
+            "label": "slotfade-vertical"
+          },
+          {
+            "value": "fadefromright",
+            "label": "fadefromright"
+          },
+          {
+            "value": "fadefromleft",
+            "label": "fadefromleft"
+          },
+          {
+            "value": "fadefromtop",
+            "label": "fadefromtop"
+          },
+          {
+            "value": "fadefrombottom",
+            "label": "fadefrombottom"
+          },
+          {
+            "value": "fadetoleftfadefromright",
+            "label": "fadetoleftfadefromright"
+          },
+          {
+            "value": "fadetorightfadefromleft",
+            "label": "fadetorightfadefromleft"
+          },
+          {
+            "value": "fadetotopfadefrombottom",
+            "label": "fadetotopfadefrombottom"
+          },
+          {
+            "value": "fadetobottomfadefromtop",
+            "label": "fadetobottomfadefromtop"
+          },
+          {
+            "value": "parallaxtoright",
+            "label": "parallaxtoright"
+          },
+          {
+            "value": "parallaxtoleft",
+            "label": "parallaxtoleft"
+          },
+          {
+            "value": "parallaxtotop",
+            "label": "parallaxtotop"
+          },
+          {
+            "value": "flyin",
+            "label": "flyin"
+          },
+          {
+            "value": "scaledownfromright",
+            "label": "scaledownfromright"
+          },
+          {
+            "value": "scaledownfromleft",
+            "label": "scaledownfromleft"
+          },
+          {
+            "value": "scaledownfromtop",
+            "label": "scaledownfromtop"
+          },
+          {
+            "value": "scaledownfrombottom",
+            "label": "scaledownfrombottom"
+          },
+          {
+            "value": "curtain-1",
+            "label": "curtain-1"
+          },
+          {
+            "value": "curtain-2",
+            "label": "curtain-2"
+          },
+          {
+            "value": "curtain-3",
+            "label": "curtain-3"
+          },
+          {
+            "value": "3dcurtain-horizontal",
+            "label": "3dcurtain-horizontal"
+          },
+          {
+            "value": "3dcurtain-vertical",
+            "label": "3dcurtain-vertical"
+          },
+          {
+            "value": "cube",
+            "label": "cube"
+          },
+          {
+            "value": "cube-horizontal",
+            "label": "cube-horizontal"
+          },
+          {
+            "value": "incube",
+            "label": "incube"
+          },
+          {
+            "value": "turnoff",
+            "label": "turnoff"
+          },
+          {
+            "value": "turnoff-vertical",
+            "label": "turnoff-vertical"
+          },
+          {
+            "value": "papercut",
+            "label": "papercut"
+          },
+          {
+            "value": "parallaxtobottom",
+            "label": "parallaxtobottom"
+          }
+        ],
+        "default": "fade"
+      },
+      {
+        "type": "text",
+        "id": "rev_slide_1_delay",
+        "label": "Delay",
+        "info": "7000",
+        "default": "7000"
+      },
+      {
+        "type": "color",
+        "id": "rev_slide_1_bg_color",
+        "label": "Background color",
+        "default": "#0b0b0b",
+        "info": "Set a background color for this slide. If an image is uploaded, this will serve as the overlay color as well."
+      },
+      {
+        "type": "select",
+        "id": "rev_slide_1_video_type",
+        "label": "Video type",
+        "options": [
+          {
+            "value": "hmtl5",
+            "label": "HTML5\/MP4"
+          },
+          {
+            "value": "vimeo",
+            "label": "Vimeo"
+          },
+          {
+            "value": "youtube",
+            "label": "Youtube"
+          }
+        ],
+        "default": "hmtl5"
+      },
+      {
+        "type": "text",
+        "id": "rev_slide_1_video",
+        "label": "Background Video .mp4 URL or Vimeo ID, Youtube ID"
+      },
+      {
+        "type": "select",
+        "id": "rev_slide_1_overlay_opacity",
+        "label": "Overlay Opacity",
+        "info": "Set the opacity level of the overlay. This will lighten or darken the image depening on the color selected.",
+        "options": [
+          {
+            "value": "0",
+            "label": "0"
+          },
+          {
+            "value": "1",
+            "label": "1"
+          },
+          {
+            "value": "2",
+            "label": "2"
+          },
+          {
+            "value": "3",
+            "label": "3"
+          },
+          {
+            "value": "4",
+            "label": "4"
+          },
+          {
+            "value": "5",
+            "label": "5"
+          },
+          {
+            "value": "6",
+            "label": "6"
+          },
+          {
+            "value": "7",
+            "label": "7"
+          },
+          {
+            "value": "8",
+            "label": "8"
+          },
+          {
+            "value": "9",
+            "label": "9"
+          },
+          {
+            "value": "10",
+            "label": "10"
+          }
+        ],
+        "default": "0"
+      },
+      {
+        "type": "select",
+        "id": "rev_slide_1_bgimage_valign",
+        "label": "Background image vertical align",
+        "options": [
+          {
+            "value": "top",
+            "label": "Top"
+          },
+          {
+            "value": "center",
+            "label": "Center"
+          },
+          {
+            "value": "bottom",
+            "label": "Bottom"
+          }
+        ]
+      },
+      {
+        "type": "select",
+        "id": "rev_slide_1_slide_styleling",
+        "label": "Slide styling",
+        "options": [
+          {
+            "value": "light",
+            "label": "Light"
+          },
+          {
+            "value": "dark",
+            "label": "Dark"
+          }
+        ]
+      },
+      {
+        "type": "select",
+        "id": "rev_slide_1_caption_transition",
+        "label": "Transition",
+        "options": [
+          {
+            "value": "slide_mask_bottom",
+            "label": "SLIDE MASK FROM BOTTOM"
+          },
+          {
+            "value": "slide_mask_left",
+            "label": "SLIDE MASK FROM LEFT"
+          },
+          {
+            "value": "slide_mask_right",
+            "label": "SLIDE MASK FROM RIGHT"
+          },
+          {
+            "value": "slide_mask_top",
+            "label": "SLIDE MASK FROM TOP"
+          },
+          {
+            "value": "smooth_mask_right",
+            "label": "SMOOTH MASK FROM RIGHT"
+          },
+          {
+            "value": "smooth_mask_left",
+            "label": "SMOOTH MASK FROM LEFT"
+          },
+          {
+            "value": "smooth_mask_bottom",
+            "label": "SMOOTH SLIDE FROM BOTTOM"
+          },
+          {
+            "value": "marked_zoom_out",
+            "label": "MASKED ZOOM OUT"
+          },
+          {
+            "value": "smooth_pop_up",
+            "label": "SMOOTH POP UP"
+          },
+          {
+            "value": "short_from_top",
+            "label": "SHORT FROM TOP"
+          },
+          {
+            "value": "Short_from_bottom",
+            "label": "SHORT FROM BOTTOM"
+          },
+          {
+            "value": "Short_from_left",
+            "label": "SHORT FROM LEFT"
+          },
+          {
+            "value": "Short_from_right",
+            "label": "SHORT FROM RIGHT"
+          },
+          {
+            "value": "long_from_top",
+            "label": "LONG FROM TOP"
+          },
+          {
+            "value": "long_from_left",
+            "label": "LONG FROM LEFT"
+          },
+          {
+            "value": "long_from_right",
+            "label": "LONG FROM RIGHT"
+          },
+          {
+            "value": "long_from_bottom",
+            "label": "LONG FROM BOTTOM"
+          },
+          {
+            "value": "custom_flip_vertical",
+            "label": "CUSTOM FLIP VERTICAL"
+          },
+          {
+            "value": "custom_flip_horizontal",
+            "label": "CUSTOM FLIP HORIZONTAL"
+          },
+          {
+            "value": "custom_skew_from_left",
+            "label": "CUSTOM SKEW FROM LEFT"
+          }
+        ],
+        "default": "slide_mask_bottom"
+      },
+      {
+        "type": "select",
+        "id": "rev_slide_1_caption_content_align",
+        "label": "Caption Content align",
+        "options": [
+          {
+            "value": "left",
+            "label": "Left"
+          },
+          {
+            "value": "center",
+            "label": "Center"
+          },
+          {
+            "value": "right",
+            "label": "Right"
+          }
+        ],
+        "default": "center"
+      },
+      {
+        "type": "text",
+        "id": "rev_slide_1_caption_title",
+        "label": "Caption Title",
+        "info": "Enter the text to show as the caption title."
+      },
+      {
+        "type": "textarea",
+        "id": "rev_slide_1_caption_text",
+        "label": "Caption Text",
+        "info": "Enter the caption text that shows below the title."
+      },
+      {
+        "type": "text",
+        "id": "rev_slide_1_button_text",
+        "label": "Button text"
+      },
+      {
+        "type": "text",
+        "id": "rev_slide_1_link",
+        "label": "Link URL"
+      },
+      {
+        "type": "select",
+        "id": "rev_slide_1_link_target",
+        "label": "Target",
+        "options": [
+          {
+            "value": "_self",
+            "label": "Self"
+          },
+          {
+            "value": "_blank",
+            "label": "Blank"
+          },
+          {
+            "value": "_parent",
+            "label": "Parent"
+          }
+        ],
+        "default": "_parent"
+      },
+      {
+        "type": "select",
+        "id": "rev_slide_1_caption_x",
+        "label": "Caption Horizontal Align",
+        "info": "Choose the horizontal align for the caption.",
+        "options": [
+          {
+            "value": "left",
+            "label": "Left"
+          },
+          {
+            "value": "center",
+            "label": "Center"
+          },
+          {
+            "value": "right",
+            "label": "Right"
+          }
+        ],
+        "default": "center"
+      },
+      {
+        "type": "select",
+        "id": "rev_slide_1_caption_y",
+        "label": "Caption Vertical Align",
+        "info": "Choose the vertical align for the caption.",
+        "options": [
+          {
+            "value": "top",
+            "label": "Top"
+          },
+          {
+            "value": "middle",
+            "label": "Middle"
+          },
+          {
+            "value": "bottom",
+            "label": "Bottom"
+          }
+        ],
+        "default": "middle"
+      },
+      {
+        "type": "select",
+        "id": "rev_slide_1_video_play",
+        "label": "Video autoplay",
+        "options": [
+          {
+            "value": "true",
+            "label": "Yes"
+          },
+          {
+            "value": "false",
+            "label": "No"
+          }
+        ],
+        "default": "true"
+      },
+      {
+        "type": "select",
+        "id": "rev_slide_1_video_loop",
+        "label": "Video Loop",
+        "info": "Choose if you would like the slide background video to play once, or loop.",
+        "options": [
+          {
+            "value": "loop",
+            "label": "Loop"
+          },
+          {
+            "value": "",
+            "label": "Single play"
+          }
+        ],
+        "default": "loop"
+      },
+      {
+        "type": "text",
+        "id": "rev_slide_1_video_volume",
+        "label": "Video mute",
+        "info": "Enter Volume From 0 to 100. Where 0 = mute and 100 = maxVolume",
+        "default": "100"
+      },
+      {
+        "type": "select",
+        "id": "rev_slide_1_video_overlay",
+        "label": "Video overlay",
+        "info": "Choose if you would like to show an overlay style over the video.",
+        "options": [
+          {
+            "value": "none",
+            "label": "None"
+          },
+          {
+            "value": "lightgrid",
+            "label": "Lightgrid"
+          },
+          {
+            "value": "darkgrid",
+            "label": "Darkgrid"
+          }
+        ],
+        "default": "none"
+      },
+      {
+        "type": "header",
+        "content": "Slide 2"
+      },
+      {
+        "type": "checkbox",
+        "id": "rev_slide_2_enable",
+        "label": "Enable slide 2"
+      },
+      {
+        "type": "select",
+        "id": "rev_slide_2_bg_type",
+        "label": "Background type",
+        "info": "Choose what the background for the slide will be.",
+        "options": [
+          {
+            "value": "image",
+            "label": "Image"
+          },
+          {
+            "value": "video",
+            "label": "Video"
+          }
+        ],
+        "default": "image"
+      },
+      {
+        "type": "image",
+        "id": "rev_slide_2.jpg",
+        "label": "Background image",
+        "max-width": 4000,
+        "info": "4000px wide required"
+      },
+      {
+        "type": "select",
+        "id": "rev_slide_2_transition",
+        "label": "Transition",
+        "options": [
+          {
+            "value": "fade",
+            "label": "fade"
+          },
+          {
+            "value": "slideup",
+            "label": "slideup"
+          },
+          {
+            "value": "slidedown",
+            "label": "slidedown"
+          },
+          {
+            "value": "slideright",
+            "label": "slideright"
+          },
+          {
+            "value": "slideleft",
+            "label": "slideleft"
+          },
+          {
+            "value": "slideoverup",
+            "label": "slideoverup"
+          },
+          {
+            "value": "slideoverdown",
+            "label": "slideoverdown"
+          },
+          {
+            "value": "slideoverright",
+            "label": "slideoverright"
+          },
+          {
+            "value": "slideoverleft",
+            "label": "slideoverleft"
+          },
+          {
+            "value": "slideremoveup",
+            "label": "slideremoveup"
+          },
+          {
+            "value": "slideremovedown",
+            "label": "slideremovedown"
+          },
+          {
+            "value": "slideremoveright",
+            "label": "slideremoveright"
+          },
+          {
+            "value": "slideremoveleft",
+            "label": "slideremoveleft"
+          },
+          {
+            "value": "boxslide",
+            "label": "boxslide"
+          },
+          {
+            "value": "slotslide-horizontal",
+            "label": "slotslide-horizontal"
+          },
+          {
+            "value": "slotslide-vertical",
+            "label": "slotslide-vertical"
+          },
+          {
+            "value": "boxfade",
+            "label": "boxfade"
+          },
+          {
+            "value": "slotfade-horizontal",
+            "label": "slotfade-horizontal"
+          },
+          {
+            "value": "slotfade-vertical",
+            "label": "slotfade-vertical"
+          },
+          {
+            "value": "fadefromright",
+            "label": "fadefromright"
+          },
+          {
+            "value": "fadefromleft",
+            "label": "fadefromleft"
+          },
+          {
+            "value": "fadefromtop",
+            "label": "fadefromtop"
+          },
+          {
+            "value": "fadefrombottom",
+            "label": "fadefrombottom"
+          },
+          {
+            "value": "fadetoleftfadefromright",
+            "label": "fadetoleftfadefromright"
+          },
+          {
+            "value": "fadetorightfadefromleft",
+            "label": "fadetorightfadefromleft"
+          },
+          {
+            "value": "fadetotopfadefrombottom",
+            "label": "fadetotopfadefrombottom"
+          },
+          {
+            "value": "fadetobottomfadefromtop",
+            "label": "fadetobottomfadefromtop"
+          },
+          {
+            "value": "parallaxtoright",
+            "label": "parallaxtoright"
+          },
+          {
+            "value": "parallaxtoleft",
+            "label": "parallaxtoleft"
+          },
+          {
+            "value": "parallaxtotop",
+            "label": "parallaxtotop"
+          },
+          {
+            "value": "flyin",
+            "label": "flyin"
+          },
+          {
+            "value": "scaledownfromright",
+            "label": "scaledownfromright"
+          },
+          {
+            "value": "scaledownfromleft",
+            "label": "scaledownfromleft"
+          },
+          {
+            "value": "scaledownfromtop",
+            "label": "scaledownfromtop"
+          },
+          {
+            "value": "scaledownfrombottom",
+            "label": "scaledownfrombottom"
+          },
+          {
+            "value": "curtain-1",
+            "label": "curtain-1"
+          },
+          {
+            "value": "curtain-2",
+            "label": "curtain-2"
+          },
+          {
+            "value": "curtain-3",
+            "label": "curtain-3"
+          },
+          {
+            "value": "3dcurtain-horizontal",
+            "label": "3dcurtain-horizontal"
+          },
+          {
+            "value": "3dcurtain-vertical",
+            "label": "3dcurtain-vertical"
+          },
+          {
+            "value": "cube",
+            "label": "cube"
+          },
+          {
+            "value": "cube-horizontal",
+            "label": "cube-horizontal"
+          },
+          {
+            "value": "incube",
+            "label": "incube"
+          },
+          {
+            "value": "turnoff",
+            "label": "turnoff"
+          },
+          {
+            "value": "turnoff-vertical",
+            "label": "turnoff-vertical"
+          },
+          {
+            "value": "papercut",
+            "label": "papercut"
+          },
+          {
+            "value": "parallaxtobottom",
+            "label": "parallaxtobottom"
+          }
+        ],
+        "default": "fade"
+      },
+      {
+        "type": "text",
+        "id": "rev_slide_2_delay",
+        "label": "Delay",
+        "info": "7000",
+        "default": "7000"
+      },
+      {
+        "type": "color",
+        "id": "rev_slide_2_bg_color",
+        "label": "Background color",
+        "default": "#0b0b0b",
+        "info": "Set a background color for this slide. If an image is uploaded, this will serve as the overlay color as well."
+      },
+      {
+        "type": "select",
+        "id": "rev_slide_2_video_type",
+        "label": "Video type",
+        "options": [
+          {
+            "value": "hmtl5",
+            "label": "HTML5\/MP4"
+          },
+          {
+            "value": "vimeo",
+            "label": "Vimeo"
+          },
+          {
+            "value": "youtube",
+            "label": "Youtube"
+          }
+        ],
+        "default": "hmtl5"
+      },
+      {
+        "type": "text",
+        "id": "rev_slide_2_video",
+        "label": "Background Video .mp4 URL or Vimeo ID, Youtube ID"
+      },
+      {
+        "type": "select",
+        "id": "rev_slide_2_overlay_opacity",
+        "label": "Overlay Opacity",
+        "info": "Set the opacity level of the overlay. This will lighten or darken the image depening on the color selected.",
+        "options": [
+          {
+            "value": "0",
+            "label": "0"
+          },
+          {
+            "value": "1",
+            "label": "1"
+          },
+          {
+            "value": "2",
+            "label": "2"
+          },
+          {
+            "value": "3",
+            "label": "3"
+          },
+          {
+            "value": "4",
+            "label": "4"
+          },
+          {
+            "value": "5",
+            "label": "5"
+          },
+          {
+            "value": "6",
+            "label": "6"
+          },
+          {
+            "value": "7",
+            "label": "7"
+          },
+          {
+            "value": "8",
+            "label": "8"
+          },
+          {
+            "value": "9",
+            "label": "9"
+          },
+          {
+            "value": "10",
+            "label": "10"
+          }
+        ],
+        "default": "0"
+      },
+      {
+        "type": "select",
+        "id": "rev_slide_2_bgimage_valign",
+        "label": "Background image vertical align",
+        "options": [
+          {
+            "value": "top",
+            "label": "Top"
+          },
+          {
+            "value": "center",
+            "label": "Center"
+          },
+          {
+            "value": "bottom",
+            "label": "Bottom"
+          }
+        ]
+      },
+      {
+        "type": "select",
+        "id": "rev_slide_2_slide_styleling",
+        "label": "Slide styling",
+        "options": [
+          {
+            "value": "light",
+            "label": "Light"
+          },
+          {
+            "value": "dark",
+            "label": "Dark"
+          }
+        ]
+      },
+      {
+        "type": "select",
+        "id": "rev_slide_2_caption_transition",
+        "label": "Transition",
+        "options": [
+          {
+            "value": "slide_mask_bottom",
+            "label": "SLIDE MASK FROM BOTTOM"
+          },
+          {
+            "value": "slide_mask_left",
+            "label": "SLIDE MASK FROM LEFT"
+          },
+          {
+            "value": "slide_mask_right",
+            "label": "SLIDE MASK FROM RIGHT"
+          },
+          {
+            "value": "slide_mask_top",
+            "label": "SLIDE MASK FROM TOP"
+          },
+          {
+            "value": "smooth_mask_right",
+            "label": "SMOOTH MASK FROM RIGHT"
+          },
+          {
+            "value": "smooth_mask_left",
+            "label": "SMOOTH MASK FROM LEFT"
+          },
+          {
+            "value": "smooth_mask_bottom",
+            "label": "SMOOTH SLIDE FROM BOTTOM"
+          },
+          {
+            "value": "marked_zoom_out",
+            "label": "MASKED ZOOM OUT"
+          },
+          {
+            "value": "smooth_pop_up",
+            "label": "SMOOTH POP UP"
+          },
+          {
+            "value": "short_from_top",
+            "label": "SHORT FROM TOP"
+          },
+          {
+            "value": "Short_from_bottom",
+            "label": "SHORT FROM BOTTOM"
+          },
+          {
+            "value": "Short_from_left",
+            "label": "SHORT FROM LEFT"
+          },
+          {
+            "value": "Short_from_right",
+            "label": "SHORT FROM RIGHT"
+          },
+          {
+            "value": "long_from_top",
+            "label": "LONG FROM TOP"
+          },
+          {
+            "value": "long_from_left",
+            "label": "LONG FROM LEFT"
+          },
+          {
+            "value": "long_from_right",
+            "label": "LONG FROM RIGHT"
+          },
+          {
+            "value": "long_from_bottom",
+            "label": "LONG FROM BOTTOM"
+          },
+          {
+            "value": "custom_flip_vertical",
+            "label": "CUSTOM FLIP VERTICAL"
+          },
+          {
+            "value": "custom_flip_horizontal",
+            "label": "CUSTOM FLIP HORIZONTAL"
+          },
+          {
+            "value": "custom_skew_from_left",
+            "label": "CUSTOM SKEW FROM LEFT"
+          }
+        ],
+        "default": "slide_mask_bottom"
+      },
+      {
+        "type": "select",
+        "id": "rev_slide_2_caption_content_align",
+        "label": "Caption Content align",
+        "options": [
+          {
+            "value": "left",
+            "label": "Left"
+          },
+          {
+            "value": "center",
+            "label": "Center"
+          },
+          {
+            "value": "right",
+            "label": "Right"
+          }
+        ],
+        "default": "center"
+      },
+      {
+        "type": "text",
+        "id": "rev_slide_2_caption_title",
+        "label": "Caption Title",
+        "info": "Enter the text to show as the caption title."
+      },
+      {
+        "type": "textarea",
+        "id": "rev_slide_2_caption_text",
+        "label": "Caption Text",
+        "info": "Enter the caption text that shows below the title."
+      },
+      {
+        "type": "text",
+        "id": "rev_slide_2_button_text",
+        "label": "Button text"
+      },
+      {
+        "type": "text",
+        "id": "rev_slide_2_link",
+        "label": "Link URL"
+      },
+      {
+        "type": "select",
+        "id": "rev_slide_2_link_target",
+        "label": "Target",
+        "options": [
+          {
+            "value": "_self",
+            "label": "Self"
+          },
+          {
+            "value": "_blank",
+            "label": "Blank"
+          },
+          {
+            "value": "_parent",
+            "label": "Parent"
+          }
+        ],
+        "default": "_parent"
+      },
+      {
+        "type": "select",
+        "id": "rev_slide_2_caption_x",
+        "label": "Caption Horizontal Align",
+        "info": "Choose the horizontal align for the caption.",
+        "options": [
+          {
+            "value": "left",
+            "label": "Left"
+          },
+          {
+            "value": "center",
+            "label": "Center"
+          },
+          {
+            "value": "right",
+            "label": "Right"
+          }
+        ],
+        "default": "center"
+      },
+      {
+        "type": "select",
+        "id": "rev_slide_2_caption_y",
+        "label": "Caption Vertical Align",
+        "info": "Choose the vertical align for the caption.",
+        "options": [
+          {
+            "value": "top",
+            "label": "Top"
+          },
+          {
+            "value": "middle",
+            "label": "Middle"
+          },
+          {
+            "value": "bottom",
+            "label": "Bottom"
+          }
+        ],
+        "default": "middle"
+      },
+      {
+        "type": "select",
+        "id": "rev_slide_2_video_play",
+        "label": "Video autoplay",
+        "options": [
+          {
+            "value": "true",
+            "label": "Yes"
+          },
+          {
+            "value": "false",
+            "label": "No"
+          }
+        ],
+        "default": "true"
+      },
+      {
+        "type": "select",
+        "id": "rev_slide_2_video_loop",
+        "label": "Video Loop",
+        "info": "Choose if you would like the slide background video to play once, or loop.",
+        "options": [
+          {
+            "value": "loop",
+            "label": "Loop"
+          },
+          {
+            "value": "",
+            "label": "Single play"
+          }
+        ],
+        "default": "loop"
+      },
+      {
+        "type": "text",
+        "id": "rev_slide_2_video_volume",
+        "label": "Video mute",
+        "info": "Enter Volume From 0 to 100. Where 0 = mute and 100 = maxVolume",
+        "default": "100"
+      },
+      {
+        "type": "select",
+        "id": "rev_slide_2_video_overlay",
+        "label": "Video overlay",
+        "info": "Choose if you would like to show an overlay style over the video.",
+        "options": [
+          {
+            "value": "none",
+            "label": "None"
+          },
+          {
+            "value": "lightgrid",
+            "label": "Lightgrid"
+          },
+          {
+            "value": "darkgrid",
+            "label": "Darkgrid"
+          }
+        ],
+        "default": "none"
+      },
+      {
+        "type": "header",
+        "content": "Slide 3"
+      },
+      {
+        "type": "checkbox",
+        "id": "rev_slide_3_enable",
+        "label": "Enable slide 3"
+      },
+      {
+        "type": "select",
+        "id": "rev_slide_3_bg_type",
+        "label": "Background type",
+        "info": "Choose what the background for the slide will be.",
+        "options": [
+          {
+            "value": "image",
+            "label": "Image"
+          },
+          {
+            "value": "video",
+            "label": "Video"
+          }
+        ],
+        "default": "image"
+      },
+      {
+        "type": "image",
+        "id": "rev_slide_3.jpg",
+        "label": "Background image",
+        "max-width": 4000,
+        "info": "4000px wide required"
+      },
+      {
+        "type": "select",
+        "id": "rev_slide_3_transition",
+        "label": "Transition",
+        "options": [
+          {
+            "value": "fade",
+            "label": "fade"
+          },
+          {
+            "value": "slideup",
+            "label": "slideup"
+          },
+          {
+            "value": "slidedown",
+            "label": "slidedown"
+          },
+          {
+            "value": "slideright",
+            "label": "slideright"
+          },
+          {
+            "value": "slideleft",
+            "label": "slideleft"
+          },
+          {
+            "value": "slideoverup",
+            "label": "slideoverup"
+          },
+          {
+            "value": "slideoverdown",
+            "label": "slideoverdown"
+          },
+          {
+            "value": "slideoverright",
+            "label": "slideoverright"
+          },
+          {
+            "value": "slideoverleft",
+            "label": "slideoverleft"
+          },
+          {
+            "value": "slideremoveup",
+            "label": "slideremoveup"
+          },
+          {
+            "value": "slideremovedown",
+            "label": "slideremovedown"
+          },
+          {
+            "value": "slideremoveright",
+            "label": "slideremoveright"
+          },
+          {
+            "value": "slideremoveleft",
+            "label": "slideremoveleft"
+          },
+          {
+            "value": "boxslide",
+            "label": "boxslide"
+          },
+          {
+            "value": "slotslide-horizontal",
+            "label": "slotslide-horizontal"
+          },
+          {
+            "value": "slotslide-vertical",
+            "label": "slotslide-vertical"
+          },
+          {
+            "value": "boxfade",
+            "label": "boxfade"
+          },
+          {
+            "value": "slotfade-horizontal",
+            "label": "slotfade-horizontal"
+          },
+          {
+            "value": "slotfade-vertical",
+            "label": "slotfade-vertical"
+          },
+          {
+            "value": "fadefromright",
+            "label": "fadefromright"
+          },
+          {
+            "value": "fadefromleft",
+            "label": "fadefromleft"
+          },
+          {
+            "value": "fadefromtop",
+            "label": "fadefromtop"
+          },
+          {
+            "value": "fadefrombottom",
+            "label": "fadefrombottom"
+          },
+          {
+            "value": "fadetoleftfadefromright",
+            "label": "fadetoleftfadefromright"
+          },
+          {
+            "value": "fadetorightfadefromleft",
+            "label": "fadetorightfadefromleft"
+          },
+          {
+            "value": "fadetotopfadefrombottom",
+            "label": "fadetotopfadefrombottom"
+          },
+          {
+            "value": "fadetobottomfadefromtop",
+            "label": "fadetobottomfadefromtop"
+          },
+          {
+            "value": "parallaxtoright",
+            "label": "parallaxtoright"
+          },
+          {
+            "value": "parallaxtoleft",
+            "label": "parallaxtoleft"
+          },
+          {
+            "value": "parallaxtotop",
+            "label": "parallaxtotop"
+          },
+          {
+            "value": "flyin",
+            "label": "flyin"
+          },
+          {
+            "value": "scaledownfromright",
+            "label": "scaledownfromright"
+          },
+          {
+            "value": "scaledownfromleft",
+            "label": "scaledownfromleft"
+          },
+          {
+            "value": "scaledownfromtop",
+            "label": "scaledownfromtop"
+          },
+          {
+            "value": "scaledownfrombottom",
+            "label": "scaledownfrombottom"
+          },
+          {
+            "value": "curtain-1",
+            "label": "curtain-1"
+          },
+          {
+            "value": "curtain-2",
+            "label": "curtain-2"
+          },
+          {
+            "value": "curtain-3",
+            "label": "curtain-3"
+          },
+          {
+            "value": "3dcurtain-horizontal",
+            "label": "3dcurtain-horizontal"
+          },
+          {
+            "value": "3dcurtain-vertical",
+            "label": "3dcurtain-vertical"
+          },
+          {
+            "value": "cube",
+            "label": "cube"
+          },
+          {
+            "value": "cube-horizontal",
+            "label": "cube-horizontal"
+          },
+          {
+            "value": "incube",
+            "label": "incube"
+          },
+          {
+            "value": "turnoff",
+            "label": "turnoff"
+          },
+          {
+            "value": "turnoff-vertical",
+            "label": "turnoff-vertical"
+          },
+          {
+            "value": "papercut",
+            "label": "papercut"
+          },
+          {
+            "value": "parallaxtobottom",
+            "label": "parallaxtobottom"
+          }
+        ],
+        "default": "fade"
+      },
+      {
+        "type": "text",
+        "id": "rev_slide_3_delay",
+        "label": "Delay",
+        "info": "7000",
+        "default": "7000"
+      },
+      {
+        "type": "color",
+        "id": "rev_slide_3_bg_color",
+        "label": "Background color",
+        "default": "#0b0b0b",
+        "info": "Set a background color for this slide. If an image is uploaded, this will serve as the overlay color as well."
+      },
+      {
+        "type": "select",
+        "id": "rev_slide_3_video_type",
+        "label": "Video type",
+        "options": [
+          {
+            "value": "hmtl5",
+            "label": "HTML5\/MP4"
+          },
+          {
+            "value": "vimeo",
+            "label": "Vimeo"
+          },
+          {
+            "value": "youtube",
+            "label": "Youtube"
+          }
+        ],
+        "default": "hmtl5"
+      },
+      {
+        "type": "text",
+        "id": "rev_slide_3_video",
+        "label": "Background Video .mp4 URL or Vimeo ID, Youtube ID"
+      },
+      {
+        "type": "select",
+        "id": "rev_slide_3_overlay_opacity",
+        "label": "Overlay Opacity",
+        "info": "Set the opacity level of the overlay. This will lighten or darken the image depening on the color selected.",
+        "options": [
+          {
+            "value": "0",
+            "label": "0"
+          },
+          {
+            "value": "1",
+            "label": "1"
+          },
+          {
+            "value": "2",
+            "label": "2"
+          },
+          {
+            "value": "3",
+            "label": "3"
+          },
+          {
+            "value": "4",
+            "label": "4"
+          },
+          {
+            "value": "5",
+            "label": "5"
+          },
+          {
+            "value": "6",
+            "label": "6"
+          },
+          {
+            "value": "7",
+            "label": "7"
+          },
+          {
+            "value": "8",
+            "label": "8"
+          },
+          {
+            "value": "9",
+            "label": "9"
+          },
+          {
+            "value": "10",
+            "label": "10"
+          }
+        ],
+        "default": "0"
+      },
+      {
+        "type": "select",
+        "id": "rev_slide_3_bgimage_valign",
+        "label": "Background image vertical align",
+        "options": [
+          {
+            "value": "top",
+            "label": "Top"
+          },
+          {
+            "value": "center",
+            "label": "Center"
+          },
+          {
+            "value": "bottom",
+            "label": "Bottom"
+          }
+        ]
+      },
+      {
+        "type": "select",
+        "id": "rev_slide_3_slide_styleling",
+        "label": "Slide styling",
+        "options": [
+          {
+            "value": "light",
+            "label": "Light"
+          },
+          {
+            "value": "dark",
+            "label": "Dark"
+          }
+        ]
+      },
+      {
+        "type": "select",
+        "id": "rev_slide_3_caption_transition",
+        "label": "Transition",
+        "options": [
+          {
+            "value": "slide_mask_bottom",
+            "label": "SLIDE MASK FROM BOTTOM"
+          },
+          {
+            "value": "slide_mask_left",
+            "label": "SLIDE MASK FROM LEFT"
+          },
+          {
+            "value": "slide_mask_right",
+            "label": "SLIDE MASK FROM RIGHT"
+          },
+          {
+            "value": "slide_mask_top",
+            "label": "SLIDE MASK FROM TOP"
+          },
+          {
+            "value": "smooth_mask_right",
+            "label": "SMOOTH MASK FROM RIGHT"
+          },
+          {
+            "value": "smooth_mask_left",
+            "label": "SMOOTH MASK FROM LEFT"
+          },
+          {
+            "value": "smooth_mask_bottom",
+            "label": "SMOOTH SLIDE FROM BOTTOM"
+          },
+          {
+            "value": "marked_zoom_out",
+            "label": "MASKED ZOOM OUT"
+          },
+          {
+            "value": "smooth_pop_up",
+            "label": "SMOOTH POP UP"
+          },
+          {
+            "value": "short_from_top",
+            "label": "SHORT FROM TOP"
+          },
+          {
+            "value": "Short_from_bottom",
+            "label": "SHORT FROM BOTTOM"
+          },
+          {
+            "value": "Short_from_left",
+            "label": "SHORT FROM LEFT"
+          },
+          {
+            "value": "Short_from_right",
+            "label": "SHORT FROM RIGHT"
+          },
+          {
+            "value": "long_from_top",
+            "label": "LONG FROM TOP"
+          },
+          {
+            "value": "long_from_left",
+            "label": "LONG FROM LEFT"
+          },
+          {
+            "value": "long_from_right",
+            "label": "LONG FROM RIGHT"
+          },
+          {
+            "value": "long_from_bottom",
+            "label": "LONG FROM BOTTOM"
+          },
+          {
+            "value": "custom_flip_vertical",
+            "label": "CUSTOM FLIP VERTICAL"
+          },
+          {
+            "value": "custom_flip_horizontal",
+            "label": "CUSTOM FLIP HORIZONTAL"
+          },
+          {
+            "value": "custom_skew_from_left",
+            "label": "CUSTOM SKEW FROM LEFT"
+          }
+        ],
+        "default": "slide_mask_bottom"
+      },
+      {
+        "type": "select",
+        "id": "rev_slide_3_caption_content_align",
+        "label": "Caption Content align",
+        "options": [
+          {
+            "value": "left",
+            "label": "Left"
+          },
+          {
+            "value": "center",
+            "label": "Center"
+          },
+          {
+            "value": "right",
+            "label": "Right"
+          }
+        ],
+        "default": "center"
+      },
+      {
+        "type": "text",
+        "id": "rev_slide_3_caption_title",
+        "label": "Caption Title",
+        "info": "Enter the text to show as the caption title."
+      },
+      {
+        "type": "textarea",
+        "id": "rev_slide_3_caption_text",
+        "label": "Caption Text",
+        "info": "Enter the caption text that shows below the title."
+      },
+      {
+        "type": "text",
+        "id": "rev_slide_3_button_text",
+        "label": "Button text"
+      },
+      {
+        "type": "text",
+        "id": "rev_slide_3_link",
+        "label": "Link URL"
+      },
+      {
+        "type": "select",
+        "id": "rev_slide_3_link_target",
+        "label": "Target",
+        "options": [
+          {
+            "value": "_self",
+            "label": "Self"
+          },
+          {
+            "value": "_blank",
+            "label": "Blank"
+          },
+          {
+            "value": "_parent",
+            "label": "Parent"
+          }
+        ],
+        "default": "_parent"
+      },
+      {
+        "type": "select",
+        "id": "rev_slide_3_caption_x",
+        "label": "Caption Horizontal Align",
+        "info": "Choose the horizontal align for the caption.",
+        "options": [
+          {
+            "value": "left",
+            "label": "Left"
+          },
+          {
+            "value": "center",
+            "label": "Center"
+          },
+          {
+            "value": "right",
+            "label": "Right"
+          }
+        ],
+        "default": "center"
+      },
+      {
+        "type": "select",
+        "id": "rev_slide_3_caption_y",
+        "label": "Caption Vertical Align",
+        "info": "Choose the vertical align for the caption.",
+        "options": [
+          {
+            "value": "top",
+            "label": "Top"
+          },
+          {
+            "value": "middle",
+            "label": "Middle"
+          },
+          {
+            "value": "bottom",
+            "label": "Bottom"
+          }
+        ],
+        "default": "middle"
+      },
+      {
+        "type": "select",
+        "id": "rev_slide_3_video_play",
+        "label": "Video autoplay",
+        "options": [
+          {
+            "value": "true",
+            "label": "Yes"
+          },
+          {
+            "value": "false",
+            "label": "No"
+          }
+        ],
+        "default": "true"
+      },
+      {
+        "type": "select",
+        "id": "rev_slide_3_video_loop",
+        "label": "Video Loop",
+        "info": "Choose if you would like the slide background video to play once, or loop.",
+        "options": [
+          {
+            "value": "loop",
+            "label": "Loop"
+          },
+          {
+            "value": "",
+            "label": "Single play"
+          }
+        ],
+        "default": "loop"
+      },
+      {
+        "type": "text",
+        "id": "rev_slide_3_video_volume",
+        "label": "Video mute",
+        "info": "Enter Volume From 0 to 100. Where 0 = mute and 100 = maxVolume",
+        "default": "100"
+      },
+      {
+        "type": "select",
+        "id": "rev_slide_3_video_overlay",
+        "label": "Video overlay",
+        "info": "Choose if you would like to show an overlay style over the video.",
+        "options": [
+          {
+            "value": "none",
+            "label": "None"
+          },
+          {
+            "value": "lightgrid",
+            "label": "Lightgrid"
+          },
+          {
+            "value": "darkgrid",
+            "label": "Darkgrid"
+          }
+        ],
+        "default": "none"
+      },
+      {
+        "type": "header",
+        "content": "Slide 4"
+      },
+      {
+        "type": "checkbox",
+        "id": "rev_slide_4_enable",
+        "label": "Enable slide 4"
+      },
+      {
+        "type": "select",
+        "id": "rev_slide_4_bg_type",
+        "label": "Background type",
+        "info": "Choose what the background for the slide will be.",
+        "options": [
+          {
+            "value": "image",
+            "label": "Image"
+          },
+          {
+            "value": "video",
+            "label": "Video"
+          }
+        ],
+        "default": "image"
+      },
+      {
+        "type": "image",
+        "id": "rev_slide_4.jpg",
+        "label": "Background image",
+        "max-width": 4000,
+        "info": "4000px wide required"
+      },
+      {
+        "type": "select",
+        "id": "rev_slide_4_transition",
+        "label": "Transition",
+        "options": [
+          {
+            "value": "fade",
+            "label": "fade"
+          },
+          {
+            "value": "slideup",
+            "label": "slideup"
+          },
+          {
+            "value": "slidedown",
+            "label": "slidedown"
+          },
+          {
+            "value": "slideright",
+            "label": "slideright"
+          },
+          {
+            "value": "slideleft",
+            "label": "slideleft"
+          },
+          {
+            "value": "slideoverup",
+            "label": "slideoverup"
+          },
+          {
+            "value": "slideoverdown",
+            "label": "slideoverdown"
+          },
+          {
+            "value": "slideoverright",
+            "label": "slideoverright"
+          },
+          {
+            "value": "slideoverleft",
+            "label": "slideoverleft"
+          },
+          {
+            "value": "slideremoveup",
+            "label": "slideremoveup"
+          },
+          {
+            "value": "slideremovedown",
+            "label": "slideremovedown"
+          },
+          {
+            "value": "slideremoveright",
+            "label": "slideremoveright"
+          },
+          {
+            "value": "slideremoveleft",
+            "label": "slideremoveleft"
+          },
+          {
+            "value": "boxslide",
+            "label": "boxslide"
+          },
+          {
+            "value": "slotslide-horizontal",
+            "label": "slotslide-horizontal"
+          },
+          {
+            "value": "slotslide-vertical",
+            "label": "slotslide-vertical"
+          },
+          {
+            "value": "boxfade",
+            "label": "boxfade"
+          },
+          {
+            "value": "slotfade-horizontal",
+            "label": "slotfade-horizontal"
+          },
+          {
+            "value": "slotfade-vertical",
+            "label": "slotfade-vertical"
+          },
+          {
+            "value": "fadefromright",
+            "label": "fadefromright"
+          },
+          {
+            "value": "fadefromleft",
+            "label": "fadefromleft"
+          },
+          {
+            "value": "fadefromtop",
+            "label": "fadefromtop"
+          },
+          {
+            "value": "fadefrombottom",
+            "label": "fadefrombottom"
+          },
+          {
+            "value": "fadetoleftfadefromright",
+            "label": "fadetoleftfadefromright"
+          },
+          {
+            "value": "fadetorightfadefromleft",
+            "label": "fadetorightfadefromleft"
+          },
+          {
+            "value": "fadetotopfadefrombottom",
+            "label": "fadetotopfadefrombottom"
+          },
+          {
+            "value": "fadetobottomfadefromtop",
+            "label": "fadetobottomfadefromtop"
+          },
+          {
+            "value": "parallaxtoright",
+            "label": "parallaxtoright"
+          },
+          {
+            "value": "parallaxtoleft",
+            "label": "parallaxtoleft"
+          },
+          {
+            "value": "parallaxtotop",
+            "label": "parallaxtotop"
+          },
+          {
+            "value": "flyin",
+            "label": "flyin"
+          },
+          {
+            "value": "scaledownfromright",
+            "label": "scaledownfromright"
+          },
+          {
+            "value": "scaledownfromleft",
+            "label": "scaledownfromleft"
+          },
+          {
+            "value": "scaledownfromtop",
+            "label": "scaledownfromtop"
+          },
+          {
+            "value": "scaledownfrombottom",
+            "label": "scaledownfrombottom"
+          },
+          {
+            "value": "curtain-1",
+            "label": "curtain-1"
+          },
+          {
+            "value": "curtain-2",
+            "label": "curtain-2"
+          },
+          {
+            "value": "curtain-3",
+            "label": "curtain-3"
+          },
+          {
+            "value": "3dcurtain-horizontal",
+            "label": "3dcurtain-horizontal"
+          },
+          {
+            "value": "3dcurtain-vertical",
+            "label": "3dcurtain-vertical"
+          },
+          {
+            "value": "cube",
+            "label": "cube"
+          },
+          {
+            "value": "cube-horizontal",
+            "label": "cube-horizontal"
+          },
+          {
+            "value": "incube",
+            "label": "incube"
+          },
+          {
+            "value": "turnoff",
+            "label": "turnoff"
+          },
+          {
+            "value": "turnoff-vertical",
+            "label": "turnoff-vertical"
+          },
+          {
+            "value": "papercut",
+            "label": "papercut"
+          },
+          {
+            "value": "parallaxtobottom",
+            "label": "parallaxtobottom"
+          }
+        ],
+        "default": "fade"
+      },
+      {
+        "type": "text",
+        "id": "rev_slide_4_delay",
+        "label": "Delay",
+        "info": "7000",
+        "default": "7000"
+      },
+      {
+        "type": "color",
+        "id": "rev_slide_4_bg_color",
+        "label": "Background color",
+        "default": "#0b0b0b",
+        "info": "Set a background color for this slide. If an image is uploaded, this will serve as the overlay color as well."
+      },
+      {
+        "type": "select",
+        "id": "rev_slide_4_video_type",
+        "label": "Video type",
+        "options": [
+          {
+            "value": "hmtl5",
+            "label": "HTML5\/MP4"
+          },
+          {
+            "value": "vimeo",
+            "label": "Vimeo"
+          },
+          {
+            "value": "youtube",
+            "label": "Youtube"
+          }
+        ],
+        "default": "hmtl5"
+      },
+      {
+        "type": "text",
+        "id": "rev_slide_4_video",
+        "label": "Background Video .mp4 URL or Vimeo ID, Youtube ID"
+      },
+      {
+        "type": "select",
+        "id": "rev_slide_4_overlay_opacity",
+        "label": "Overlay Opacity",
+        "info": "Set the opacity level of the overlay. This will lighten or darken the image depening on the color selected.",
+        "options": [
+          {
+            "value": "0",
+            "label": "0"
+          },
+          {
+            "value": "1",
+            "label": "1"
+          },
+          {
+            "value": "2",
+            "label": "2"
+          },
+          {
+            "value": "3",
+            "label": "3"
+          },
+          {
+            "value": "4",
+            "label": "4"
+          },
+          {
+            "value": "5",
+            "label": "5"
+          },
+          {
+            "value": "6",
+            "label": "6"
+          },
+          {
+            "value": "7",
+            "label": "7"
+          },
+          {
+            "value": "8",
+            "label": "8"
+          },
+          {
+            "value": "9",
+            "label": "9"
+          },
+          {
+            "value": "10",
+            "label": "10"
+          }
+        ],
+        "default": "0"
+      },
+      {
+        "type": "select",
+        "id": "rev_slide_4_bgimage_valign",
+        "label": "Background image vertical align",
+        "options": [
+          {
+            "value": "top",
+            "label": "Top"
+          },
+          {
+            "value": "center",
+            "label": "Center"
+          },
+          {
+            "value": "bottom",
+            "label": "Bottom"
+          }
+        ]
+      },
+      {
+        "type": "select",
+        "id": "rev_slide_4_slide_styleling",
+        "label": "Slide styling",
+        "options": [
+          {
+            "value": "light",
+            "label": "Light"
+          },
+          {
+            "value": "dark",
+            "label": "Dark"
+          }
+        ]
+      },
+      {
+        "type": "select",
+        "id": "rev_slide_4_caption_transition",
+        "label": "Transition",
+        "options": [
+          {
+            "value": "slide_mask_bottom",
+            "label": "SLIDE MASK FROM BOTTOM"
+          },
+          {
+            "value": "slide_mask_left",
+            "label": "SLIDE MASK FROM LEFT"
+          },
+          {
+            "value": "slide_mask_right",
+            "label": "SLIDE MASK FROM RIGHT"
+          },
+          {
+            "value": "slide_mask_top",
+            "label": "SLIDE MASK FROM TOP"
+          },
+          {
+            "value": "smooth_mask_right",
+            "label": "SMOOTH MASK FROM RIGHT"
+          },
+          {
+            "value": "smooth_mask_left",
+            "label": "SMOOTH MASK FROM LEFT"
+          },
+          {
+            "value": "smooth_mask_bottom",
+            "label": "SMOOTH SLIDE FROM BOTTOM"
+          },
+          {
+            "value": "marked_zoom_out",
+            "label": "MASKED ZOOM OUT"
+          },
+          {
+            "value": "smooth_pop_up",
+            "label": "SMOOTH POP UP"
+          },
+          {
+            "value": "short_from_top",
+            "label": "SHORT FROM TOP"
+          },
+          {
+            "value": "Short_from_bottom",
+            "label": "SHORT FROM BOTTOM"
+          },
+          {
+            "value": "Short_from_left",
+            "label": "SHORT FROM LEFT"
+          },
+          {
+            "value": "Short_from_right",
+            "label": "SHORT FROM RIGHT"
+          },
+          {
+            "value": "long_from_top",
+            "label": "LONG FROM TOP"
+          },
+          {
+            "value": "long_from_left",
+            "label": "LONG FROM LEFT"
+          },
+          {
+            "value": "long_from_right",
+            "label": "LONG FROM RIGHT"
+          },
+          {
+            "value": "long_from_bottom",
+            "label": "LONG FROM BOTTOM"
+          },
+          {
+            "value": "custom_flip_vertical",
+            "label": "CUSTOM FLIP VERTICAL"
+          },
+          {
+            "value": "custom_flip_horizontal",
+            "label": "CUSTOM FLIP HORIZONTAL"
+          },
+          {
+            "value": "custom_skew_from_left",
+            "label": "CUSTOM SKEW FROM LEFT"
+          }
+        ],
+        "default": "slide_mask_bottom"
+      },
+      {
+        "type": "select",
+        "id": "rev_slide_4_caption_content_align",
+        "label": "Caption Content align",
+        "options": [
+          {
+            "value": "left",
+            "label": "Left"
+          },
+          {
+            "value": "center",
+            "label": "Center"
+          },
+          {
+            "value": "right",
+            "label": "Right"
+          }
+        ],
+        "default": "center"
+      },
+      {
+        "type": "text",
+        "id": "rev_slide_4_caption_title",
+        "label": "Caption Title",
+        "info": "Enter the text to show as the caption title."
+      },
+      {
+        "type": "textarea",
+        "id": "rev_slide_4_caption_text",
+        "label": "Caption Text",
+        "info": "Enter the caption text that shows below the title."
+      },
+      {
+        "type": "text",
+        "id": "rev_slide_4_button_text",
+        "label": "Button text"
+      },
+      {
+        "type": "text",
+        "id": "rev_slide_4_link",
+        "label": "Link URL"
+      },
+      {
+        "type": "select",
+        "id": "rev_slide_4_link_target",
+        "label": "Target",
+        "options": [
+          {
+            "value": "_self",
+            "label": "Self"
+          },
+          {
+            "value": "_blank",
+            "label": "Blank"
+          },
+          {
+            "value": "_parent",
+            "label": "Parent"
+          }
+        ],
+        "default": "_parent"
+      },
+      {
+        "type": "select",
+        "id": "rev_slide_4_caption_x",
+        "label": "Caption Horizontal Align",
+        "info": "Choose the horizontal align for the caption.",
+        "options": [
+          {
+            "value": "left",
+            "label": "Left"
+          },
+          {
+            "value": "center",
+            "label": "Center"
+          },
+          {
+            "value": "right",
+            "label": "Right"
+          }
+        ],
+        "default": "center"
+      },
+      {
+        "type": "select",
+        "id": "rev_slide_4_caption_y",
+        "label": "Caption Vertical Align",
+        "info": "Choose the vertical align for the caption.",
+        "options": [
+          {
+            "value": "top",
+            "label": "Top"
+          },
+          {
+            "value": "middle",
+            "label": "Middle"
+          },
+          {
+            "value": "bottom",
+            "label": "Bottom"
+          }
+        ],
+        "default": "middle"
+      },
+      {
+        "type": "select",
+        "id": "rev_slide_4_video_play",
+        "label": "Video autoplay",
+        "options": [
+          {
+            "value": "true",
+            "label": "Yes"
+          },
+          {
+            "value": "false",
+            "label": "No"
+          }
+        ],
+        "default": "true"
+      },
+      {
+        "type": "select",
+        "id": "rev_slide_4_video_loop",
+        "label": "Video Loop",
+        "info": "Choose if you would like the slide background video to play once, or loop.",
+        "options": [
+          {
+            "value": "loop",
+            "label": "Loop"
+          },
+          {
+            "value": "",
+            "label": "Single play"
+          }
+        ],
+        "default": "loop"
+      },
+      {
+        "type": "text",
+        "id": "rev_slide_4_video_volume",
+        "label": "Video mute",
+        "info": "Enter Volume From 0 to 100. Where 0 = mute and 100 = maxVolume",
+        "default": "100"
+      },
+      {
+        "type": "select",
+        "id": "rev_slide_4_video_overlay",
+        "label": "Video overlay",
+        "info": "Choose if you would like to show an overlay style over the video.",
+        "options": [
+          {
+            "value": "none",
+            "label": "None"
+          },
+          {
+            "value": "lightgrid",
+            "label": "Lightgrid"
+          },
+          {
+            "value": "darkgrid",
+            "label": "Darkgrid"
+          }
+        ],
+        "default": "none"
+      },
+      {
+        "type": "header",
+        "content": "Slide 5"
+      },
+      {
+        "type": "checkbox",
+        "id": "rev_slide_5_enable",
+        "label": "Enable slide 5"
+      },
+      {
+        "type": "select",
+        "id": "rev_slide_5_bg_type",
+        "label": "Background type",
+        "info": "Choose what the background for the slide will be.",
+        "options": [
+          {
+            "value": "image",
+            "label": "Image"
+          },
+          {
+            "value": "video",
+            "label": "Video"
+          }
+        ],
+        "default": "image"
+      },
+      {
+        "type": "image",
+        "id": "rev_slide_5.jpg",
+        "label": "Background image",
+        "max-width": 4000,
+        "info": "4000px wide required"
+      },
+      {
+        "type": "select",
+        "id": "rev_slide_5_transition",
+        "label": "Transition",
+        "options": [
+          {
+            "value": "fade",
+            "label": "fade"
+          },
+          {
+            "value": "slideup",
+            "label": "slideup"
+          },
+          {
+            "value": "slidedown",
+            "label": "slidedown"
+          },
+          {
+            "value": "slideright",
+            "label": "slideright"
+          },
+          {
+            "value": "slideleft",
+            "label": "slideleft"
+          },
+          {
+            "value": "slideoverup",
+            "label": "slideoverup"
+          },
+          {
+            "value": "slideoverdown",
+            "label": "slideoverdown"
+          },
+          {
+            "value": "slideoverright",
+            "label": "slideoverright"
+          },
+          {
+            "value": "slideoverleft",
+            "label": "slideoverleft"
+          },
+          {
+            "value": "slideremoveup",
+            "label": "slideremoveup"
+          },
+          {
+            "value": "slideremovedown",
+            "label": "slideremovedown"
+          },
+          {
+            "value": "slideremoveright",
+            "label": "slideremoveright"
+          },
+          {
+            "value": "slideremoveleft",
+            "label": "slideremoveleft"
+          },
+          {
+            "value": "boxslide",
+            "label": "boxslide"
+          },
+          {
+            "value": "slotslide-horizontal",
+            "label": "slotslide-horizontal"
+          },
+          {
+            "value": "slotslide-vertical",
+            "label": "slotslide-vertical"
+          },
+          {
+            "value": "boxfade",
+            "label": "boxfade"
+          },
+          {
+            "value": "slotfade-horizontal",
+            "label": "slotfade-horizontal"
+          },
+          {
+            "value": "slotfade-vertical",
+            "label": "slotfade-vertical"
+          },
+          {
+            "value": "fadefromright",
+            "label": "fadefromright"
+          },
+          {
+            "value": "fadefromleft",
+            "label": "fadefromleft"
+          },
+          {
+            "value": "fadefromtop",
+            "label": "fadefromtop"
+          },
+          {
+            "value": "fadefrombottom",
+            "label": "fadefrombottom"
+          },
+          {
+            "value": "fadetoleftfadefromright",
+            "label": "fadetoleftfadefromright"
+          },
+          {
+            "value": "fadetorightfadefromleft",
+            "label": "fadetorightfadefromleft"
+          },
+          {
+            "value": "fadetotopfadefrombottom",
+            "label": "fadetotopfadefrombottom"
+          },
+          {
+            "value": "fadetobottomfadefromtop",
+            "label": "fadetobottomfadefromtop"
+          },
+          {
+            "value": "parallaxtoright",
+            "label": "parallaxtoright"
+          },
+          {
+            "value": "parallaxtoleft",
+            "label": "parallaxtoleft"
+          },
+          {
+            "value": "parallaxtotop",
+            "label": "parallaxtotop"
+          },
+          {
+            "value": "flyin",
+            "label": "flyin"
+          },
+          {
+            "value": "scaledownfromright",
+            "label": "scaledownfromright"
+          },
+          {
+            "value": "scaledownfromleft",
+            "label": "scaledownfromleft"
+          },
+          {
+            "value": "scaledownfromtop",
+            "label": "scaledownfromtop"
+          },
+          {
+            "value": "scaledownfrombottom",
+            "label": "scaledownfrombottom"
+          },
+          {
+            "value": "curtain-1",
+            "label": "curtain-1"
+          },
+          {
+            "value": "curtain-2",
+            "label": "curtain-2"
+          },
+          {
+            "value": "curtain-3",
+            "label": "curtain-3"
+          },
+          {
+            "value": "3dcurtain-horizontal",
+            "label": "3dcurtain-horizontal"
+          },
+          {
+            "value": "3dcurtain-vertical",
+            "label": "3dcurtain-vertical"
+          },
+          {
+            "value": "cube",
+            "label": "cube"
+          },
+          {
+            "value": "cube-horizontal",
+            "label": "cube-horizontal"
+          },
+          {
+            "value": "incube",
+            "label": "incube"
+          },
+          {
+            "value": "turnoff",
+            "label": "turnoff"
+          },
+          {
+            "value": "turnoff-vertical",
+            "label": "turnoff-vertical"
+          },
+          {
+            "value": "papercut",
+            "label": "papercut"
+          },
+          {
+            "value": "parallaxtobottom",
+            "label": "parallaxtobottom"
+          }
+        ],
+        "default": "fade"
+      },
+      {
+        "type": "text",
+        "id": "rev_slide_5_delay",
+        "label": "Delay",
+        "info": "7000",
+        "default": "7000"
+      },
+      {
+        "type": "color",
+        "id": "rev_slide_5_bg_color",
+        "label": "Background color",
+        "default": "#0b0b0b",
+        "info": "Set a background color for this slide. If an image is uploaded, this will serve as the overlay color as well."
+      },
+      {
+        "type": "select",
+        "id": "rev_slide_5_video_type",
+        "label": "Video type",
+        "options": [
+          {
+            "value": "hmtl5",
+            "label": "HTML5\/MP4"
+          },
+          {
+            "value": "vimeo",
+            "label": "Vimeo"
+          },
+          {
+            "value": "youtube",
+            "label": "Youtube"
+          }
+        ],
+        "default": "hmtl5"
+      },
+      {
+        "type": "text",
+        "id": "rev_slide_5_video",
+        "label": "Background Video .mp4 URL or Vimeo ID, Youtube ID"
+      },
+      {
+        "type": "select",
+        "id": "rev_slide_5_overlay_opacity",
+        "label": "Overlay Opacity",
+        "info": "Set the opacity level of the overlay. This will lighten or darken the image depening on the color selected.",
+        "options": [
+          {
+            "value": "0",
+            "label": "0"
+          },
+          {
+            "value": "1",
+            "label": "1"
+          },
+          {
+            "value": "2",
+            "label": "2"
+          },
+          {
+            "value": "3",
+            "label": "3"
+          },
+          {
+            "value": "4",
+            "label": "4"
+          },
+          {
+            "value": "5",
+            "label": "5"
+          },
+          {
+            "value": "6",
+            "label": "6"
+          },
+          {
+            "value": "7",
+            "label": "7"
+          },
+          {
+            "value": "8",
+            "label": "8"
+          },
+          {
+            "value": "9",
+            "label": "9"
+          },
+          {
+            "value": "10",
+            "label": "10"
+          }
+        ],
+        "default": "0"
+      },
+      {
+        "type": "select",
+        "id": "rev_slide_5_bgimage_valign",
+        "label": "Background image vertical align",
+        "options": [
+          {
+            "value": "top",
+            "label": "Top"
+          },
+          {
+            "value": "center",
+            "label": "Center"
+          },
+          {
+            "value": "bottom",
+            "label": "Bottom"
+          }
+        ]
+      },
+      {
+        "type": "select",
+        "id": "rev_slide_5_slide_styleling",
+        "label": "Slide styling",
+        "options": [
+          {
+            "value": "light",
+            "label": "Light"
+          },
+          {
+            "value": "dark",
+            "label": "Dark"
+          }
+        ]
+      },
+      {
+        "type": "select",
+        "id": "rev_slide_5_caption_transition",
+        "label": "Transition",
+        "options": [
+          {
+            "value": "slide_mask_bottom",
+            "label": "SLIDE MASK FROM BOTTOM"
+          },
+          {
+            "value": "slide_mask_left",
+            "label": "SLIDE MASK FROM LEFT"
+          },
+          {
+            "value": "slide_mask_right",
+            "label": "SLIDE MASK FROM RIGHT"
+          },
+          {
+            "value": "slide_mask_top",
+            "label": "SLIDE MASK FROM TOP"
+          },
+          {
+            "value": "smooth_mask_right",
+            "label": "SMOOTH MASK FROM RIGHT"
+          },
+          {
+            "value": "smooth_mask_left",
+            "label": "SMOOTH MASK FROM LEFT"
+          },
+          {
+            "value": "smooth_mask_bottom",
+            "label": "SMOOTH SLIDE FROM BOTTOM"
+          },
+          {
+            "value": "marked_zoom_out",
+            "label": "MASKED ZOOM OUT"
+          },
+          {
+            "value": "smooth_pop_up",
+            "label": "SMOOTH POP UP"
+          },
+          {
+            "value": "short_from_top",
+            "label": "SHORT FROM TOP"
+          },
+          {
+            "value": "Short_from_bottom",
+            "label": "SHORT FROM BOTTOM"
+          },
+          {
+            "value": "Short_from_left",
+            "label": "SHORT FROM LEFT"
+          },
+          {
+            "value": "Short_from_right",
+            "label": "SHORT FROM RIGHT"
+          },
+          {
+            "value": "long_from_top",
+            "label": "LONG FROM TOP"
+          },
+          {
+            "value": "long_from_left",
+            "label": "LONG FROM LEFT"
+          },
+          {
+            "value": "long_from_right",
+            "label": "LONG FROM RIGHT"
+          },
+          {
+            "value": "long_from_bottom",
+            "label": "LONG FROM BOTTOM"
+          },
+          {
+            "value": "custom_flip_vertical",
+            "label": "CUSTOM FLIP VERTICAL"
+          },
+          {
+            "value": "custom_flip_horizontal",
+            "label": "CUSTOM FLIP HORIZONTAL"
+          },
+          {
+            "value": "custom_skew_from_left",
+            "label": "CUSTOM SKEW FROM LEFT"
+          }
+        ],
+        "default": "slide_mask_bottom"
+      },
+      {
+        "type": "select",
+        "id": "rev_slide_5_caption_content_align",
+        "label": "Caption Content align",
+        "options": [
+          {
+            "value": "left",
+            "label": "Left"
+          },
+          {
+            "value": "center",
+            "label": "Center"
+          },
+          {
+            "value": "right",
+            "label": "Right"
+          }
+        ],
+        "default": "center"
+      },
+      {
+        "type": "text",
+        "id": "rev_slide_5_caption_title",
+        "label": "Caption Title",
+        "info": "Enter the text to show as the caption title."
+      },
+      {
+        "type": "textarea",
+        "id": "rev_slide_5_caption_text",
+        "label": "Caption Text",
+        "info": "Enter the caption text that shows below the title."
+      },
+      {
+        "type": "text",
+        "id": "rev_slide_5_button_text",
+        "label": "Button text"
+      },
+      {
+        "type": "text",
+        "id": "rev_slide_5_link",
+        "label": "Link URL"
+      },
+      {
+        "type": "select",
+        "id": "rev_slide_5_link_target",
+        "label": "Target",
+        "options": [
+          {
+            "value": "_self",
+            "label": "Self"
+          },
+          {
+            "value": "_blank",
+            "label": "Blank"
+          },
+          {
+            "value": "_parent",
+            "label": "Parent"
+          }
+        ],
+        "default": "_parent"
+      },
+      {
+        "type": "select",
+        "id": "rev_slide_5_caption_x",
+        "label": "Caption Horizontal Align",
+        "info": "Choose the horizontal align for the caption.",
+        "options": [
+          {
+            "value": "left",
+            "label": "Left"
+          },
+          {
+            "value": "center",
+            "label": "Center"
+          },
+          {
+            "value": "right",
+            "label": "Right"
+          }
+        ],
+        "default": "center"
+      },
+      {
+        "type": "select",
+        "id": "rev_slide_5_caption_y",
+        "label": "Caption Vertical Align",
+        "info": "Choose the vertical align for the caption.",
+        "options": [
+          {
+            "value": "top",
+            "label": "Top"
+          },
+          {
+            "value": "middle",
+            "label": "Middle"
+          },
+          {
+            "value": "bottom",
+            "label": "Bottom"
+          }
+        ],
+        "default": "middle"
+      },
+      {
+        "type": "select",
+        "id": "rev_slide_5_video_play",
+        "label": "Video autoplay",
+        "options": [
+          {
+            "value": "true",
+            "label": "Yes"
+          },
+          {
+            "value": "false",
+            "label": "No"
+          }
+        ],
+        "default": "true"
+      },
+      {
+        "type": "select",
+        "id": "rev_slide_5_video_loop",
+        "label": "Video Loop",
+        "info": "Choose if you would like the slide background video to play once, or loop.",
+        "options": [
+          {
+            "value": "loop",
+            "label": "Loop"
+          },
+          {
+            "value": "",
+            "label": "Single play"
+          }
+        ],
+        "default": "loop"
+      },
+      {
+        "type": "text",
+        "id": "rev_slide_5_video_volume",
+        "label": "Video mute",
+        "info": "Enter Volume From 0 to 100. Where 0 = mute and 100 = maxVolume",
+        "default": "100"
+      },
+      {
+        "type": "select",
+        "id": "rev_slide_5_video_overlay",
+        "label": "Video overlay",
+        "info": "Choose if you would like to show an overlay style over the video.",
+        "options": [
+          {
+            "value": "none",
+            "label": "None"
+          },
+          {
+            "value": "lightgrid",
+            "label": "Lightgrid"
+          },
+          {
+            "value": "darkgrid",
+            "label": "Darkgrid"
+          }
+        ],
+        "default": "none"
+      }
+    ]
+  },
